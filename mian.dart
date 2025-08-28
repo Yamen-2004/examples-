@@ -8,6 +8,9 @@ void main() {
   double height = 5;
   bool isStudent = true;
   String emptyString = "";
+  print(name2.lastIndexOf("a"));
+
+  print(emptyString.isEmpty);
 
   print("name is \$ 12");
   print("yamen 'coffe' ");
@@ -46,6 +49,7 @@ void main() {
   print(ages.first);
   print(ages.last);
   ages.clear();
+  print(ages.length);
 
   Map<String, dynamic> person = {"name": "Yamen", "age": 20, "isStudent": true};
   print(person); // {name: Yamen, age: 20, isStudent: true}
@@ -126,4 +130,27 @@ void main() {
     default:
       print("Not found");
   }
+
+  //=====Null value ====
+  String? adress;
+  adress = stdin.readLineSync(); 
+
+
+    int? phone;
+  phone = int.parse(stdin.readLineSync()!);
+  print (phone);
+
+  double? pi;
+  pi = double.parse(stdin.readLineSync()!);
+  print (pi);
+
+  bool? isTrue;
+  isTrue = stdin.readLineSync()!.toLowerCase() == 'true';
+  print (isTrue);
+
+
+    //====line if ===== 
+  int z = 15;
+  String result = (z % 2 == 0) ? "Even" : "Odd";
+
 }

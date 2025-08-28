@@ -38,4 +38,9 @@ void main() {
   } else {
     print("x is less than or equal to 10");
   }
+
+
+  //====line if ===== 
+  int z = 15;
+  String result = (z % 2 == 0) ? "Even" : "Odd";
 }
