@@ -1,5 +1,7 @@
+import 'dart:io';
+
 void main() {
-    var num_list = [1, 2, 3,3];
+  var num_list = [1, 2, 3, 3];
 
   print(num_list); // [1, 2, 3]
   print(num_list[1]); // 2
@@ -8,12 +10,11 @@ void main() {
   print(num_list.isEmpty); // false
   print(num_list.isNotEmpty); // true
   print(num_list.lastIndexOf(3)); // 2
-
   print(num_list[0]); // 1
   num_list.add(4); // add 4 to the end of the list
   print(num_list); // [1, 2, 3, 4]
   print(num_list.remove(1)); // remove element at index 1
-  num_list.remove(1);  // remove element 1
+  num_list.remove(1); // remove element 1
   num_list.removeAt(1); // remove element at index 1
   print(num_list); // [1, 3, 4]
   print(num_list.length); // 3
@@ -25,4 +26,7 @@ void main() {
   num_list.clear(); // clear the list
   print(num_list); // []
 
+  String Age = (stdin.readLineSync()! );
+  String Name = stdin.readLineSync()!;
+  List<String> MYLIST = [Age, Name, "89", "Yamen"];
 }
